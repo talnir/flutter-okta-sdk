@@ -19,7 +19,7 @@ extension FlutterOktaError: LocalizedError {
     var errorDescription: String? { return message }
 }
 
-public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
+public class SwiftFlutterOktaNativeWrapperSdkPlugin: NSObject, FlutterPlugin {
 
   var _channel: FlutterMethodChannel;
   var oktaOidc: OktaOidc?
@@ -27,7 +27,7 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
 
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: CHANNEL_NAME, binaryMessenger: registrar.messenger())
-    let instance = SwiftFlutterOktaSdkPlugin(channel: channel)
+    let instance = SwiftFlutterOktaNativeWrapperSdkPlugin(channel: channel)
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
