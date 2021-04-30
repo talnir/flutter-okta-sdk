@@ -30,7 +30,7 @@ flutter:
         package: com.sonikro.flutter_okta_sdk
         pluginClass: FlutterOktaSdkPlugin
       ios:
-        pluginClass: FlutterOktaSdkPlugin
+        pluginClass: FlutterOktaNativeWrapperSdkPlugin
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
